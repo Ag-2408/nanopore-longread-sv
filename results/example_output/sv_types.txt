@@ -1,0 +1,5 @@
+DEL    420
+INS    380
+INV    210
+DUP    160
+BND     75
