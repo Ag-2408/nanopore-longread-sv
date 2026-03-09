@@ -54,7 +54,6 @@ I[Variant Filtering<br>BCFtools]
 
 J[Structural Variant Results]
 
-
 A --> B
 B --> C
 C --> D
@@ -65,18 +64,17 @@ G --> H
 H --> I
 I --> J
 
-
 classDef data fill:#1f77b4,color:white
 classDef qc fill:#ff7f0e,color:white
 classDef align fill:#9467bd,color:white
 classDef sv fill:#2ca02c,color:white
-
 
 class A data
 class B,C,D,E qc
 class F,G align
 class H,I,J sv
 ```
+
 ---
 
 # Tools Used
@@ -94,6 +92,22 @@ class H,I,J sv
 
 ---
 
+# Example Quality Control Outputs
+
+### Read Length Distribution
+
+![Read Length Distribution](docs/figures/read_length_distribution.png)
+
+### Yield by Read Length (N50)
+
+![Yield by Length](docs/figures/read_length_yield.png)
+
+### Read Length vs Read Quality
+
+![Read Length vs Quality](docs/figures/read_length_vs_quality.png)
+
+---
+
 # Repository Structure
 
 ```
@@ -105,9 +119,11 @@ nanopore-longread-sv
 ├── environment
 │   └── environment.yml
 │
-├── data
+├── docs
+│   └── figures
 │
 ├── results
+│   └── example_output
 │
 └── README.md
 ```
@@ -147,7 +163,7 @@ bash scripts/nanopore_sv_pipeline.sh
 The pipeline generates:
 
 * FASTQ statistics
-* Quality control reports
+* NanoPlot quality control reports
 * Alignment statistics
 * Structural variant VCF files
 * Filtered structural variants
