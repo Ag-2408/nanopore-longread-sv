@@ -1,0 +1,15 @@
+name: nanopore_sv_pipeline
+
+channels:
+  - bioconda
+  - conda-forge
+
+dependencies:
+  - minimap2
+  - samtools
+  - sniffles
+  - bcftools
+  - nanoplot
+  - nanofilt
+  - seqkit
+  - sra-tools
