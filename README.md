@@ -176,4 +176,4 @@ All results are stored in the **results/** directory.
 # Author
 
 **Agrima Mateyal**
-MSc Bioinformatics
+Bioinformatics Analyst
